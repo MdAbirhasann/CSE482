@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abir Hasan Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        .card, .btn, .nav-link { transition: all 0.3s ease-in-out; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important; }
+        
+       
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container { animation: fadeInUp 0.7s ease-out; }
+
+        
+        .profile-card img { height: 400px; object-fit: cover; }
+        @media (max-width: 768px) { .profile-card img { height: 250px; } }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="alert alert-primary shadow border-0">
+            Welcome to my portfolio website.
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card profile-card shadow border-0 overflow-hidden">
+                    <img src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/477150910_1204645441081816_8676162668429437848_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFzvgppiUYCKFsAs16-qoaAOQLTx8rjVIY5AtPHyuNUhmc1DcYMdVB6S9T99F3SckacAEQ4MQottVK4VrXV-zJ_&_nc_ohc=R_WP-dm3C8oQ7kNvwEOA-yN&_nc_oc=AdqWXTabMf1j-esLEI9HvEVgEGQncwnp2Cxy6jc4Lhx3aSiSbDaruNKkklTYSEleQyQ&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=1u_7c5bvJCqAkDcmQHY6ZA&_nc_ss=7a3a8&oh=00_Af1rMZAkKVCaKgMvN2Rep7L-FfS0YT_JcwxT9M6bpDO1Bg&oe=69D70C9E" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Md. Abir Hasan</h3>
+                        <p class="card-text text-muted">CSE student at North South University. Focused on Web Development.</p>
+                        <a href="https://github.com/MdAbirhasann" target="_blank" class="btn btn-primary px-4">View My Work</a>
+                        <span class="badge bg-success ms-2 p-2">CSE Student</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExample" class="carousel slide shadow mt-5 rounded overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="https://i.ytimg.com/vi/wnhfJpxTGOY/maxresdefault.jpg" class="d-block w-100"></div>
+                <div class="carousel-item"><img src="https://hackaday.com/wp-content/uploads/2020/12/8-bit-computer-main.png?w=800" class="d-block w-100"></div>
+                <div class="carousel-item"><img src="https://raw.githubusercontent.com/Nasim227/CSE299_Group-4/refs/heads/main/Support/SS/sidebar.png" class="d-block w-100"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn {
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-img {
+    transition: 0.4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+
+    h1,
+    h2 {
+        font-size: 22px;
+    }
+
+    .profile-img {
+        width: 50% !important;
+    }
+}
