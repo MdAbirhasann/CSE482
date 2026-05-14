@@ -1,0 +1,22 @@
+{
+  "name": "lost-find-portal-client",
+  "version": "1.0.0",
+  "description": "React frontend for Lost & Find Portal",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "vite": "latest",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.0.2",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {}
+}
